@@ -309,7 +309,7 @@
                     events.push({
                         date: p.periode,
                         title: p.jenjang + ' - ' + p.prodi,
-                        org: p.instansi,
+                        org: p.institusi || p.org || '',
                         desc: '',
                         type: 'pendidikan'
                     });
