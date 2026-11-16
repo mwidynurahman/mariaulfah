@@ -1,0 +1,71 @@
+{
+  "personal": {
+    "nama": "Maria Ulfah, S.T., Gr.",
+    "tagline": "Guru Gen-Z · Guru Produktif TAV / Teknik Elektronika",
+    "instansi": "SMK Karya Nasional Kuningan",
+    "lokasi": "Kuningan, Jawa Barat",
+    "bio": "Guru Gen-Z yang mengintegrasikan AIoT dan media digital interaktif untuk menciptakan pembelajaran adaptif, inovatif, serta berdampak pada ekosistem teknologi berkelanjutan.",
+    "foto": "assets/mariaulfah.jpg"
+  },
+  "kontak": {
+    "email": "maria.ulfh98@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/maria-ulfah-a143b8214/",
+    "instagram": "https://www.instagram.com/mariawehh/",
+    "youtube": "https://www.youtube.com/@mariaulfah",
+    "tiktok": "https://www.tiktok.com/@mariaweehh",
+    "web": "https://cikgumaria.my.id"
+  },
+  "keahlian": [
+    {
+      "kelompok": "Pedagogi",
+      "items": ["Project Based Learning", "Differentiated Learning", "Deep Learning", "Asesmen Formatif"]
+    },
+    {
+      "kelompok": "Teknologi Pembelajaran",
+      "items": ["Canva", "Google Classroom", "Kahoot", "Quizizz", "Wordwall"]
+    },
+    {
+      "kelompok": "Pembuatan Media",
+      "items": ["Video pembelajaran", "Podcast", "Infografis", "Game edukasi", "IoT (Internet of Things)"]
+    },
+    {
+      "kelompok": "Kompetensi Lain",
+      "items": ["Koding", "AI untuk pendidikan", "Robotik", "PLC", "Kepemimpinan"]
+    }
+  ],
+  "prestasi_dan_karya": [
+    { "tahun": "2026", "prestasi": "Juara 1", "lomba": "PATENT (Patria Techno Competition)", "penyelenggara": "PT United Tractors Pandu Engineering", "tingkat": "Nasional", "judul": "SMART PPE – Intelligent RFID-Based Safety Equipment Verification System", "peserta": "Azrie Dani Maulana & Muhammad Iqbal (XII TAV)", "status_peserta": "Siswa", "pembimbing": "-", "kategori": "Lomba/Kompetisi", "tech": "RFID, IoT, Arduino" },
+    { "tahun": "2026", "prestasi": "Juara 1", "lomba": "Center of Excellence Bootcamp Astra 2026", "penyelenggara": "PT Astra International Tbk", "tingkat": "Nasional", "judul": "MINI EXHIBITION ARDUINO PROJECT", "peserta": "Maria Ulfah, S.T.", "status_peserta": "Guru", "pembimbing": "-", "kategori": "Pelatihan & Berbagi Praktik", "tech": "Arduino, IoT" },
+    { "tahun": "2026", "prestasi": "Juara 2", "lomba": "AHM Best Student 2026", "penyelenggara": "PT Astra Honda Motor", "tingkat": "Jawa Barat", "judul": "E-DALANG (Experience the Wayang Differently)", "peserta": "Mochamad Brama Reksa Wijaya, Adi Purnama, Muhamad Bagus Nurbuat (XII TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T.", "kategori": "Lomba/Kompetisi", "tech": "MediaPipe, Hand Tracking, ESP32" },
+    { "tahun": "2026", "prestasi": "Top 10 Finalis", "lomba": "STEAMPreneur", "penyelenggara": "Kemendikdasmen", "tingkat": "Nasional", "judul": "E-DALANG (Experience the Wayang Differently)", "peserta": "Mochamad Brama Reksa Wijaya, Adi Purnama, Muhamad Bagus Nurbuat (XII TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T.", "kategori": "Lomba/Kompetisi", "tech": "MediaPipe, Hand Tracking, ESP32" },
+    { "tahun": "2025", "prestasi": "Juara 1", "lomba": "Lomba Inovasi Karya Guru (LINKAR)", "penyelenggara": "PT Astra International Tbk", "tingkat": "Nasional", "judul": "GREENTELLIGENCE – Digital Farming in the Sky: AIoT-Based Vertical Agriculture", "peserta": "Maria Ulfah, S.T.", "status_peserta": "Guru", "pembimbing": "-", "kategori": "Inovasi Guru", "tech": "AIoT, Vertical Farming, Sensors" },
+    { "tahun": "2025", "prestasi": "Juara 1", "lomba": "AHM Best Student 2025", "penyelenggara": "PT Astra Honda Motor", "tingkat": "Jawa Barat", "judul": "HYDROGEN: Hydroponic Green Environment with AIoT Navigation", "peserta": "Azrie Dani Maulana (XI TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T. & Moch. Widy Nurahman, S.Kom.", "kategori": "Proyek Siswa", "tech": "AIoT, Hydroponik, ESP32" },
+    { "tahun": "2024", "prestasi": "Juara 1 (Kategori Idea)", "lomba": "Indibiz IoT Competition", "penyelenggara": "PT Telkom Indonesia", "tingkat": "Nasional", "judul": "Roasting Coffee Fluid Bed Based on Lynx-32 and IoT Monitoring", "peserta": "Fikri Fadurohman (XII TAV) & Ano Istiawan (X TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T. & Moch. Widy Nurahman, S.Kom.", "kategori": "Proyek Siswa", "tech": "Lynx-32, IoT Monitoring" },
+    { "tahun": "2024", "prestasi": "Juara 2 (Kategori Showcase)", "lomba": "Indibiz IoT Competition", "penyelenggara": "PT Telkom Indonesia", "tingkat": "Nasional", "judul": "IoT Smart RFID Door Lock System Using Lynx-32", "peserta": "Adika Mahda (XII TAV) & Adli Abdillah", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T. & Moch. Widy Nurahman, S.Kom.", "kategori": "Proyek Siswa", "tech": "Lynx-32, RFID, IoT" },
+    { "tahun": "2024", "prestasi": "Juara 1", "lomba": "IoT Green Sprout Challenge", "penyelenggara": "PT Telkom Indonesia (Witel Priangan Timur)", "tingkat": "Regional", "judul": "The Hydro Tower", "peserta": "Azrie Dani Maulana & Muhammad Iqbal (XI TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T. & Moch. Widy Nurahman, S.Kom.", "kategori": "Proyek Siswa", "tech": "Hydroponik, IoT, Sensors" },
+    { "tahun": "2023", "prestasi": "Juara 1", "lomba": "AHM Best Student 2023", "penyelenggara": "PT Astra Honda Motor", "tingkat": "Jawa Barat", "judul": "Coffee Bean Fluid Bed Roasting with Arduino", "peserta": "Fikri Fadurohman (XI TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T. & Moch. Widy Nurahman, S.Kom.", "kategori": "Proyek Siswa", "tech": "Arduino, IoT, Sensors" },
+    { "tahun": "2023", "prestasi": "Juara 3", "lomba": "AHM Best Student 2023", "penyelenggara": "PT Astra Honda Motor", "tingkat": "Nasional", "judul": "Coffee Bean Fluid Bed Roasting with Arduino", "peserta": "Fikri Fadurohman (XI TAV)", "status_peserta": "Siswa", "pembimbing": "Maria Ulfah, S.T. & Moch. Widy Nurahman, S.Kom.", "kategori": "Proyek Siswa", "tech": "Arduino, IoT, Sensors" }
+  ],
+  "pengalaman": [
+    {
+      "jabatan": "Guru Produktif Teknik Audio Video (TAV)",
+      "instansi": "SMK Karya Nasional Kuningan",
+      "periode": "2020 – Sekarang",
+      "deskripsi": ["Mengampu mata pelajaran produktif TAV (Teknik Audio Video)", "Membimbing siswa dalam kompetisi inovasi teknologi dan IoT tingkat nasional", "Mengembangkan media pembelajaran berbasis IoT dan AI untuk kelas"]
+    }
+  ],
+  "pendidikan": [
+    {
+      "jenjang": "S1",
+      "institusi": "Universitas Pendidikan Indonesia / Teknik",
+      "prodi": "Teknik Elektronika",
+      "periode": "2016 – 2020"
+    }
+  ],
+  "sertifikasi": [
+    { "nama": "Sertifikat Pendidik (Gr.)", "penyelenggara": "Kementerian Pendidikan", "tahun": "2021" },
+    { "nama": "Sertifikat Guru Penggerak", "penyelenggara": "Kemendikbud", "tahun": "2022" },
+    { "nama": "IoT Fundamental Certification", "penyelenggara": "Cisco Networking Academy", "tahun": "2023" },
+    { "nama": "AI for Education", "penyelenggara": "Google for Education", "tahun": "2024" }
+  ]
+}

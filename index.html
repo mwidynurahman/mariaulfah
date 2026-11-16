@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Maria Ulfah, S.T., Gr. - Guru Produktif TAV/ Teknik Elektronika SMK Karya Nasional Kuningan">
+    <title>Maria Ulfah - Portofolio Guru Kreatif</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #fafafa;
+            --card: #ffffff;
+            --text: #1a1a2e;
+            --muted: #6b7280;
+            --border: #e5e7eb;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --radius: 12px;
+            --shadow: 0 2px 8px rgba(0,0,0,0.06);
+            --shadow-hover: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 48px;
+        }
+        .header-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+        @media (min-width: 768px) {
+            .header-grid { grid-template-columns: 140px 1fr; }
+        }
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: var(--radius);
+            background: linear-gradient(135deg, var(--accent) 0%, #3b82f6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) { .avatar { margin: 0; } }
+        .avatar img { width: 100%; height: 100%; border-radius: var(--radius); object-fit: cover; }
+        .header-info h1 { font-size: clamp(28px, 4vw, 36px); font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+        .header-info .tagline { color: var(--accent); font-weight: 500; font-size: 15px; margin-bottom: 4px; }
+        .header-info .instansi { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+        .header-info .bio { color: var(--text); font-size: 15px; max-width: 600px; }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-size: 14px; }
+        .contact-links a { color: var(--muted); }
+        .contact-links a:hover { color: var(--accent); }
+        /* Section */
+        section { margin-bottom: 56px; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .section-header h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+        /* Keahlian */
+        .skills-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+        @media (min-width: 640px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .skills-grid { grid-template-columns: repeat(4, 1fr); } }
+        .skill-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .skill-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+        .skill-card h3 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 12px; }
+        .skill-card ul { list-style: none; }
+        .skill-card li { font-size: 14px; padding: 6px 0; border-bottom: 1px solid var(--border); }
+        .skill-card li:last-child { border-bottom: none; }
+        /* Gallery / Karya */
+        .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+        .project-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: box-shadow 0.2s, transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
+        .project-thumb {
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .project-thumb img { width: 100%; height: 100%; object-fit: cover; }
+        .project-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+        .project-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+        .badge {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .badge-year { background: #eff6ff; color: var(--accent); }
+        .badge-status { background: #f0fdf4; color: #16a34a; }
+        .badge-category { background: #fef3c7; color: #d97706; }
+        .project-body h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
+        .project-body .lomba { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+        .project-body .penyelenggara { font-size: 12px; color: var(--muted); }
+        .project-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 12px; }
+        .tech-tag { font-size: 11px; background: #f3f4f6; color: #374151; padding: 3px 8px; border-radius: 6px; font-weight: 500; }
+        /* About / Timeline */
+        .timeline { position: relative; padding-left: 24px; }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 32px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 2px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid var(--card);
+            box-shadow: 0 0 0 1px var(--border);
+        }
+        .timeline-date { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+        .timeline-title { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+        .timeline-org { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+        .timeline-desc { font-size: 13px; color: var(--text); line-height: 1.7; }
+        .timeline-desc ul { margin-left: 16px; margin-top: 8px; }
+        .timeline-desc li { margin: 4px 0; }
+        /* Footer */
+        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+        footer a { color: var(--muted); margin: 0 8px; }
+        footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-grid">
+                <div>
+                    <div class="avatar" id="avatar">
+                        <span>MU</span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <h1 id="nama"></h1>
+                    <div class="tagline" id="tagline"></div>
+                    <div class="instansi" id="instansi"></div>
+                    <div class="bio" id="bio"></div>
+                    <div class="contact-links" id="kontak"></div>
+                </div>
+            </div>
+        </header>
+
+        <section id="keahlian-section">
+            <div class="section-header">
+                <h2>Kompetensi</h2>
+            </div>
+            <div class="skills-grid" id="keahlian"></div>
+        </section>
+
+        <section id="karya-section">
+            <div class="section-header">
+                <h2>Prestasi & Karya</h2>
+            </div>
+            <div class="gallery-grid" id="karya"></div>
+        </section>
+
+        <section id="tentang-section">
+            <div class="section-header">
+                <h2>Riwayat</h2>
+            </div>
+            <div class="timeline" id="timeline"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> Maria Ulfah, S.T., Gr. · Dibangun untuk Acer Smart School</p>
+    </footer>
+
+    <script>
+        fetch('portfolio.json')
+            .then(r => r.json())
+            .then(data => {
+                // Header
+                document.getElementById('nama').textContent = data.personal.nama;
+                document.getElementById('tagline').textContent = data.personal.tagline;
+                document.getElementById('instansi').textContent = data.personal.instansi + ' · ' + data.personal.lokasi;
+                document.getElementById('bio').textContent = data.personal.bio;
+                const avatarEl = document.getElementById('avatar');
+                if (data.personal.foto) {
+                    avatarEl.innerHTML = `<img src="${data.personal.foto}" alt="${data.personal.nama}">`;
+                }
+
+                // Kontak
+                const kontak = data.kontak;
+                const links = [];
+                if (kontak.email) links.push(`<a href="mailto:${kontak.email}">📧 Email</a>`);
+                if (kontak.linkedin) links.push(`<a href="${kontak.linkedin}" target="_blank">LinkedIn</a>`);
+                if (kontak.instagram) links.push(`<a href="${kontak.instagram}" target="_blank">Instagram</a>`);
+                if (kontak.youtube) links.push(`<a href="${kontak.youtube}" target="_blank">YouTube</a>`);
+                if (kontak.tiktok) links.push(`<a href="${kontak.tiktok}" target="_blank">TikTok</a>`);
+                if (kontak.web) links.push(`<a href="${kontak.web}" target="_blank">Website</a>`);
+                document.getElementById('kontak').innerHTML = links.join('');
+
+                // Keahlian
+                const skillsGrid = document.getElementById('keahlian');
+                data.keahlian.forEach(k => {
+                    skillsGrid.innerHTML += `<div class="skill-card">
+                        <h3>${k.kelompok}</h3>
+                        <ul>${k.items.map(i => `<li>${i}</li>`).join('')}</ul>
+                    </div>`;
+                });
+
+                // Karya - sorted by year desc
+                const sorted = [...data.prestasi_dan_karya].sort((a,b) => b.tahun.localeCompare(a.tahun));
+                const karyaGrid = document.getElementById('karya');
+                sorted.forEach(p => {
+                    let thumb = '';
+                    
+                    // Explicit mapping for all uploaded photos
+                    if (p.judul.includes('SMART PPE')) thumb = 'assets/smart-ppe-2026.jpg';
+                    else if (p.judul.includes('E-DALANG') && p.lomba.includes('STEAMPreneur')) thumb = 'assets/steampreneur-2026.jpg';
+                    else if (p.judul.includes('E-DALANG')) thumb = 'assets/e-dalang-2026.jpg';
+                    else if (p.judul.includes('GREENTELLIGENCE')) thumb = 'assets/greentelligence-2025.jpg';
+                    else if (p.judul.includes('Hydro Tower') || p.judul.includes('The Hydro')) thumb = 'assets/hydro-tower-2024.jpg';
+                    else if (p.judul.includes('Roasting Coffee Fluid Bed') && p.tingkat === 'Jawa Barat') thumb = 'assets/ahm-best-student-2023-roasting.jpg';
+                    else if (p.judul.includes('RFID')) thumb = 'assets/indibiz-iot-2024-juara2.jpg';
+                    else if (p.judul.includes('Roasting Coffee Fluid Bed Based on Lynx')) thumb = 'assets/indibiz-iot-2024-juara1.jpg';
+                    else if (p.lomba.includes('Bootcamp Astra 2026')) thumb = 'assets/sertifikat-astra-bootcamp-2026.jpg';
+                    else if (p.lomba.includes('Lomba Inovasi Karya Guru')) thumb = 'assets/linkar-2025.jpg';
+                    else if (p.lomba.includes('AHM Best Student 2025')) thumb = 'assets/ahm-best-student-2025.jpg';
+                    else if (p.lomba.includes('Indibiz') && p.prestasi.includes('1')) thumb = 'assets/indibiz-iot-2024-juara1.jpg';
+                    else if (p.lomba.includes('Indibiz') && p.prestasi.includes('2')) thumb = 'assets/indibiz-iot-2024-juara2.jpg';
+                    else if (p.lomba.includes('AHM Best Student 2023') && p.tingkat === 'Nasional') thumb = 'assets/ahm-best-student-2023-nasional.jpg';
+                    else if (p.lomba.includes('AHM Best Student 2023') && p.tingkat === 'Jawa Barat') thumb = 'assets/ahm-best-student-2023-jabar.jpg';
+
+                    const imgHtml = thumb 
+                        ? `<img src="${thumb}" alt="${p.judul}" style="width:100%;height:100%;object-fit:cover;">`
+                        : `<div style="padding:20px;text-align:center;">No Image Available</div>`;
+
+                    karyaGrid.innerHTML += `<article class="project-card">
+                        <div class="project-thumb">${imgHtml}</div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="badge badge-year">${p.tahun}</span>
+                                <span class="badge badge-status">${p.prestasi}</span>
+                                <span class="badge badge-category">${p.kategori}</span>
+                            </div>
+                            <h3>${p.judul}</h3>
+                            <div class="lomba">${p.lomba} — ${p.penyelenggara}</div>
+                            <div class="penyelenggara">${p.tingkat} · ${p.status_peserta}: ${p.peserta}</div>
+                            <div class="project-tech">
+                                ${p.tech.split(', ').map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                            </div>
+                        </div>
+                    </article>`;
+                });
+
+                // Timeline (Pengalaman + Pendidikan + Sertifikasi combined)
+                const timeline = document.getElementById('timeline');
+                const events = [];
+
+                data.pengalaman.forEach(p => {
+                    events.push({
+                        date: p.periode,
+                        title: p.jabatan,
+                        org: p.instansi,
+                        desc: p.deskripsi.map(d => `<li>${d}</li>`).join(''),
+                        type: 'pengalaman'
+                    });
+                });
+                data.pendidikan.forEach(p => {
+                    events.push({
+                        date: p.periode,
+                        title: p.jenjang + ' - ' + p.prodi,
+                        org: p.instansi,
+                        desc: '',
+                        type: 'pendidikan'
+                    });
+                });
+                data.sertifikasi.forEach(s => {
+                    events.push({
+                        date: s.tahun,
+                        title: s.nama,
+                        org: s.penyelenggara,
+                        desc: '',
+                        type: 'sertifikasi'
+                    });
+                });
+
+                events.sort((a,b) => {
+                    const ay = parseInt(a.date.match(/\d{4}/)?.[0] || '0');
+                    const by = parseInt(b.date.match(/\d{4}/)?.[0] || '0');
+                    return by - ay;
+                });
+
+                events.forEach(e => {
+                    timeline.innerHTML += `<div class="timeline-item">
+                        <div class="timeline-date">${e.date}</div>
+                        <div class="timeline-title">${e.title}</div>
+                        <div class="timeline-org">${e.org}</div>
+                        ${e.desc ? `<div class="timeline-desc"><ul>${e.desc}</ul></div>` : ''}
+                    </div>`;
+                });
+
+                document.getElementById('year').textContent = new Date().getFullYear();
+            })
+            .catch(err => console.error('Error loading portfolio:', err));
+    </script>
+</body>
+</html>
